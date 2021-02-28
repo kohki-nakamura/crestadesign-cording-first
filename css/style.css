@@ -1,0 +1,64 @@
+.container {
+  padding: 0 120px;
+}
+
+.header {
+  color: white;
+}
+
+.header__menu {
+  background-color: black;
+  height: 74px;
+  line-height: 74px;
+  border-bottom: white solid 2px;
+}
+
+.header__menu--logo {
+  font-size: 26px;
+}
+
+.header__menu .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__menu--list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__menu--list ul li {
+  margin-left: 40px;
+}
+
+.header__image {
+  background-image: url(../images/fv-bgi@2x.jpg);
+  height: 740px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header__image--logo {
+  font-size: 50px;
+  padding: 42px;
+  border: white solid 2px;
+  position: absolute;
+  top: 50%;
+}
+/*# sourceMappingURL=style.css.map */

@@ -2,50 +2,53 @@
 	padding: 0 120px;
 }
 
-.header {
+header {
 	color: white;
 
-	&__menu {
-		background-color: black;
-		height: 74px;
-		line-height:74px;
-		border-bottom: white solid 2px;
+	.header {
 
-		&--logo {
-			font-size: 26px;
-		}
+		&__menu {
+			background-color: black;
+			height: 74px;
+			line-height:74px;
+			border-bottom: white solid 2px;
 
-		.container {
-			display: flex;
-			justify-content: space-between;
-		}
+			&--logo {
+				font-size: 26px;
+			}
 
-		&--list {
-
-			ul {
+			.container {
 				display: flex;
+				justify-content: space-between;
+			}
 
-				li {
-					margin-left: 40px;
+			&--list {
+
+				ul {
+					display: flex;
+
+					li {
+						margin-left: 40px;
+					}
 				}
 			}
 		}
-	}
 
-	&__image {
-		background-image: url(../images/fv-bgi@2x.jpg);
-		height: 740px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
+		&__image {
+			background-image: url(../images/fv-bgi@2x.jpg);
+			height: 740px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
 
-		&--logo {
-			font-size: 50px;
-			padding: 42px;
-			border: white solid 2px;
-			position: absolute;
-			top: 50%;
+			&--logo {
+				font-size: 50px;
+				padding: 42px;
+				border: white solid 2px;
+				position: absolute;
+				top: 50%;
+			}
 		}
 	}
 }

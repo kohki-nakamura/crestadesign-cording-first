@@ -283,6 +283,7 @@ footer p {
     transition: transform .3s, -webkit-transform .3s;
   }
   .nav-wrapper {
+    display: none;
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -308,6 +309,9 @@ footer p {
   .nav-wrapper .header__menu--list ul li {
     margin-right: 0;
     margin-bottom: 40px;
+  }
+  body.noscroll {
+    overflow: hidden;
   }
 }
 /*# sourceMappingURL=style.css.map */

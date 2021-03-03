@@ -1,6 +1,6 @@
 .container {
 	padding: 0 120px;
-	width: 1120px;
+	width: 60%;
 	margin: 0 auto;
 }
 
@@ -38,6 +38,8 @@ header {
 
 		&__image {
 			background-image: url(../images/fv-bgi@2x.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
 			height: 740px;
 			display: flex;
 			justify-content: center;
@@ -59,7 +61,7 @@ header {
 	text-align: center;
 	font-size: 36px;
 	font-weight: bold;
-	margin: 200px 0 80px;
+	margin: 120px 0 80px;
 }
 
 .about {
@@ -82,16 +84,17 @@ header {
 .service {
 	&__content {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: center;
 		margin-bottom: 40px;
 
-		&:nth-child(odd) {
+		&:nth-child(even) {
 			flex-flow: row-reverse;
 		}
 
 		&--sentence {
-			width: 480px;
+			width: 50%;
 
 			.sentence__title {
 				font-size: 24px;
@@ -109,6 +112,7 @@ header {
 .news {
 	&__cards {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 	}
 	&__card {
@@ -161,5 +165,73 @@ footer {
 
 	p {
   		padding-top: 25px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.container {
+		padding: 0;
+		width: 95%;
+	}
+
+	header {
+		.header {
+			&__menu {
+				&--list {
+					display: none;
+				}
+			}
+
+			&__image {
+				background-image: url(../images/fv-bgi_sp@2x.jpg);
+
+				&--logo {
+					font-size: 30px;
+				}
+			}
+		}
+	}
+
+	.service {
+		&__content {
+			display: block;
+
+			&--image {
+				img {
+					width: 100%;
+				}
+			}
+
+			&--sentence {
+				width: 100%;
+				padding-bottom: 30px;
+
+				.sentence {
+					&__text {
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+
+	.news {
+		&__cards {
+			justify-content: center;
+		}
+
+		&__card {
+			margin-bottom: 30px;
+		}
+	}
+
+	.contacts {
+		&__form {
+			padding: 0;
+
+			input, textarea {
+				padding: 0;
+			}
+		}
 	}
 }

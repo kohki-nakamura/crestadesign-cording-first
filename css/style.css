@@ -1,6 +1,6 @@
 .container {
   padding: 0 120px;
-  width: 1120px;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -40,6 +40,8 @@ header .header__menu--list ul li {
 
 header .header__image {
   background-image: url(../images/fv-bgi@2x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 740px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -68,7 +70,7 @@ header .header__image--logo {
   text-align: center;
   font-size: 36px;
   font-weight: bold;
-  margin: 200px 0 80px;
+  margin: 120px 0 80px;
 }
 
 .about__content--title {
@@ -86,6 +88,8 @@ header .header__image--logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -95,7 +99,7 @@ header .header__image--logo {
   margin-bottom: 40px;
 }
 
-.service__content:nth-child(odd) {
+.service__content:nth-child(even) {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-flow: row-reverse;
@@ -103,7 +107,7 @@ header .header__image--logo {
 }
 
 .service__content--sentence {
-  width: 480px;
+  width: 50%;
 }
 
 .service__content--sentence .sentence__title {
@@ -120,6 +124,8 @@ header .header__image--logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -176,5 +182,48 @@ footer {
 
 footer p {
   padding-top: 25px;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0;
+    width: 95%;
+  }
+  header .header__menu--list {
+    display: none;
+  }
+  header .header__image {
+    background-image: url(../images/fv-bgi_sp@2x.jpg);
+  }
+  header .header__image--logo {
+    font-size: 30px;
+  }
+  .service__content {
+    display: block;
+  }
+  .service__content--image img {
+    width: 100%;
+  }
+  .service__content--sentence {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  .service__content--sentence .sentence__text {
+    font-size: 14px;
+  }
+  .news__cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .news__card {
+    margin-bottom: 30px;
+  }
+  .contacts__form {
+    padding: 0;
+  }
+  .contacts__form input, .contacts__form textarea {
+    padding: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

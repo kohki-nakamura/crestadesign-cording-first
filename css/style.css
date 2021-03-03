@@ -68,21 +68,51 @@ header .header__image--logo {
   text-align: center;
   font-size: 36px;
   font-weight: bold;
-}
-
-.about {
-  margin: 60px 0;
+  margin: 140px 0 100px;
 }
 
 .about__content--title {
   font-size: 24px;
   letter-spacing: 4px;
   line-height: 40px;
-  padding-top: 80px;
 }
 
 .about__content--text {
   line-height: 30px;
   padding-top: 30px;
+}
+
+.service__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+}
+
+.service__content:nth-child(odd) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse;
+          flex-flow: row-reverse;
+}
+
+.service__content--sentence {
+  width: 480px;
+}
+
+.service__content--sentence .sentence__title {
+  font-size: 24px;
+  line-height: 40px;
+  padding-bottom: 30px;
+}
+
+.service__content--sentence .sentence__text {
+  line-height: 30px;
 }
 /*# sourceMappingURL=style.css.map */

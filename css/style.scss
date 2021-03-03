@@ -122,3 +122,33 @@ header {
 		}
 	}
 }
+
+.contacts {
+	margin-bottom: 40px;
+
+	&__form {
+		padding: 0 200px;
+
+		label {
+			display: block;
+			padding: 25px 0 5px;
+		}
+
+		input, textarea {
+			padding: 10px;
+			width: 100%;
+			font-size: 18px;
+		}
+
+		button {
+			background-color: black;
+			color: white;
+			width: 200px;
+			height: 50px;
+			font-size: 18px;
+			border-radius: 50px;
+			display: block;
+			margin: 30px auto 0;
+		}
+	}
+}

@@ -136,4 +136,34 @@ header .header__image--logo {
   padding: 30px;
   line-height: 30px;
 }
+
+.contacts {
+  margin-bottom: 40px;
+}
+
+.contacts__form {
+  padding: 0 200px;
+}
+
+.contacts__form label {
+  display: block;
+  padding: 25px 0 5px;
+}
+
+.contacts__form input, .contacts__form textarea {
+  padding: 10px;
+  width: 100%;
+  font-size: 18px;
+}
+
+.contacts__form button {
+  background-color: black;
+  color: white;
+  width: 200px;
+  height: 50px;
+  font-size: 18px;
+  border-radius: 50px;
+  display: block;
+  margin: 30px auto 0;
+}
 /*# sourceMappingURL=style.css.map */

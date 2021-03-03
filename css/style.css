@@ -38,6 +38,11 @@ header .header__menu--list ul li {
   margin-left: 40px;
 }
 
+header .header__menu--list ul li a {
+  color: white;
+  text-decoration: none;
+}
+
 header .header__image {
   background-image: url(../images/fv-bgi@2x.jpg);
   background-repeat: no-repeat;

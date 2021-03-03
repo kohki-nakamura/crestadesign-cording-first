@@ -68,7 +68,7 @@ header .header__image--logo {
   text-align: center;
   font-size: 36px;
   font-weight: bold;
-  margin: 140px 0 100px;
+  margin: 200px 0 80px;
 }
 
 .about__content--title {
@@ -113,6 +113,27 @@ header .header__image--logo {
 }
 
 .service__content--sentence .sentence__text {
+  line-height: 30px;
+}
+
+.news__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.news__card {
+  width: 320px;
+  border: rgba(211, 211, 211, 0.66) solid 3px;
+  -webkit-box-shadow: 2px 2px lightgray;
+          box-shadow: 2px 2px lightgray;
+}
+
+.news__card--text {
+  padding: 30px;
   line-height: 30px;
 }
 /*# sourceMappingURL=style.css.map */

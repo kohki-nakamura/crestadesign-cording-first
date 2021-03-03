@@ -59,7 +59,7 @@ header {
 	text-align: center;
 	font-size: 36px;
 	font-weight: bold;
-	margin: 140px 0 100px;
+	margin: 200px 0 80px;
 }
 
 .about {
@@ -102,6 +102,23 @@ header {
 			.sentence__text {
 				line-height: 30px;
 			}
+		}
+	}
+}
+
+.news {
+	&__cards {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__card {
+		width: 320px;
+		border: rgba(211, 211, 211, 0.66) solid 3px;
+		box-shadow: 2px 2px lightgray;
+
+		&--text {
+			padding: 30px;
+			line-height: 30px;
 		}
 	}
 }
